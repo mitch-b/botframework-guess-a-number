@@ -114,7 +114,7 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
     bf luis:generate:cs -i Game.json -o Game.cs --className MitchBarry.Bot.GuessANumber.CognitiveModels.Game --force
     ```
   * I noticed this actually broke the default extension methods provided in the Core Bot. Not a huge loss
-  since I wasn't using the _flight booking_ features it mostly helped with, but in the [MainDialog.cs](/MitchBarry.Bot.GuessANumber/Dialogs/MainDialog.cs), 
+  since I wasn't using the _flight booking_ features it mostly helped with, but in the [MainDialog.cs](/src/MitchBarry.Bot.GuessANumber/Dialogs/MainDialog.cs), 
   it was used extensively. Had to make some adjustments there accordingly. 
 
 * I at one point wanted to go _backwards_ in my Waterfall step. The thought was, what if someone provided 
