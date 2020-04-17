@@ -1,0 +1,41 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+      {
+          "type": "Image",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB3AwMUeNoq4gUBGe6Ocj8kyh3bXa9ZbV7u1fVKQoyKFHdkqU",
+          "size": "Stretch"
+      },
+      {
+          "type": "TextBlock",
+          "spacing": "Medium",
+          "size": "default",
+          "weight": "Bolder",
+          "text": "Let's play: Guess a Number!",
+          "wrap": true,
+          "maxLines": 0
+      },
+      {
+          "type": "TextBlock",
+          "size": "default",
+          "isSubtle": true,
+          "text": "Message me the game parameters or I'll ask you for them as we go along. If you'd like to exit the game at any time, just say 'quit'!",
+          "wrap": true,
+          "maxLines": 0
+      }
+  ],
+  "actions": [
+      {
+          "type": "Action.Submit",
+          "title": "Play a game between 1 and 10",
+          "data": "Play a game between 1 and 10"
+      },
+      {
+          "type": "Action.Submit",
+          "title": "Let's play!",
+          "data": "Let's play!"
+      }
+  ]
+}

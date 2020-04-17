@@ -1,0 +1,228 @@
+{
+  "luis_schema_version": "6.0.0",
+  "intents": [
+    {
+      "name": "Cancel",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "PlayGame",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "numberRange",
+      "children": [
+        {
+          "name": "minimumNumber",
+          "children": [],
+          "features": []
+        },
+        {
+          "name": "maximumNumber",
+          "children": [],
+          "features": []
+        }
+      ],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [
+    {
+      "name": "From",
+      "children": [
+        {
+          "name": "Airport"
+        }
+      ],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "To",
+      "children": [
+        {
+          "name": "Airport"
+        }
+      ],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "closedLists": [
+    {
+      "name": "Airport",
+      "subLists": [
+        {
+          "canonicalForm": "Paris",
+          "list": [
+            "paris",
+            "cdg"
+          ]
+        },
+        {
+          "canonicalForm": "London",
+          "list": [
+            "london",
+            "lhr"
+          ]
+        },
+        {
+          "canonicalForm": "Berlin",
+          "list": [
+            "berlin",
+            "txl"
+          ]
+        },
+        {
+          "canonicalForm": "New York",
+          "list": [
+            "new york",
+            "jfk"
+          ]
+        },
+        {
+          "canonicalForm": "Seattle",
+          "list": [
+            "seattle",
+            "sea"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    }
+  ],
+  "utterances": [
+    {
+      "text": "book a hotel in new york",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a restaurant",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel booking",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "exit",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "find an airport near me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "guess a number",
+      "intent": "PlayGame",
+      "entities": []
+    },
+    {
+      "text": "guess a number between 1 and 20",
+      "intent": "PlayGame",
+      "entities": [
+        {
+          "entity": "minimumNumber",
+          "startPos": 23,
+          "endPos": 23
+        },
+        {
+          "entity": "numberRange",
+          "startPos": 23,
+          "endPos": 30
+        },
+        {
+          "entity": "maximumNumber",
+          "startPos": 29,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "i'd like to rent a car",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ignore",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "let's guess",
+      "intent": "PlayGame",
+      "entities": []
+    },
+    {
+      "text": "play",
+      "intent": "PlayGame",
+      "entities": []
+    },
+    {
+      "text": "play a game 1 to 10",
+      "intent": "PlayGame",
+      "entities": [
+        {
+          "entity": "minimumNumber",
+          "startPos": 12,
+          "endPos": 12
+        },
+        {
+          "entity": "numberRange",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "maximumNumber",
+          "startPos": 17,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "start game",
+      "intent": "PlayGame",
+      "entities": []
+    },
+    {
+      "text": "winter is coming",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "guess-a-number",
+  "desc": "Luis Model for CoreBot",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
