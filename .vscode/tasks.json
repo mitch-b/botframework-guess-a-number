@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber.csproj",
+                "${workspaceFolder}/src/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber.csproj",
+                "${workspaceFolder}/src/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber.csproj",
+                "${workspaceFolder}/src/MitchBarry.Bot.GuessANumber/MitchBarry.Bot.GuessANumber.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
